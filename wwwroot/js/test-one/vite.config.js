@@ -8,7 +8,6 @@ export default defineConfig({
   build: {
     manifest: true,
     rollupOptions: {
-      // overwrite default .html entry
       input: {
         appOne: './src/appOne/main.js',
         appTwo: './src/appTwo/main.js'
