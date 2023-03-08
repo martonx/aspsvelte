@@ -1,9 +1,4 @@
-# aspsvelte
-Asp.Net Core razor pages plus Svelte components POC
+# Asp.Net Core MVC plus Vitejs plus Sveltejs
+This proof of concept project use together Asp.Net Core MVC server side rendering plus Vitejs dev server plus Sveltejs javascript components.
 
-You can run JS app:
-1. go into wwwroot/js/test-one folder
-2. yarn
-3. yarn dev
-
-You can run Asp.Net app as usual asp.Net Core App.
+dotnet run will start vite dev server automatically.
