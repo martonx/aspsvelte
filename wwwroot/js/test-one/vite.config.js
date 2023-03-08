@@ -4,18 +4,15 @@ import basicSsl from '@vitejs/plugin-basic-ssl';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [svelte(), basicSsl()],
+  plugins: [svelte()],
   build: {
-    lib: {
-      entry: {
+    manifest: true,
+    rollupOptions: {
+      // overwrite default .html entry
+      input: {
         appOne: './src/appOne/main.js',
         appTwo: './src/appTwo/main.js'
       }
     }
-  },
-  server: {
-    open: '/',
-    https: true,
-    strictPort: true,
   }
 });
